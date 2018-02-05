@@ -1,0 +1,15 @@
+<?xml version = "1.0"?>
+<project name = "Ant Tutorial" default = "info">
+   <target name = "info">
+      <echo>Welcome to Apache Ant!</echo>
+   </target>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes"/>
+    </target>
+</project>
